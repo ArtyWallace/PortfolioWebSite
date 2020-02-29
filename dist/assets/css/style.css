@@ -87,6 +87,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .intro__suptitle {
@@ -161,6 +162,111 @@
     border-color: #2b2a2c;
 }
 
+.btn--intro {
+    margin-left: 13px;
+}
+
+.instruments__slider {
+    width: 100%;
+    margin: 100px auto;
+}
+
+.instruments__item {
+    margin: auto 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.instruments__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.instruments__title {
+    font-size: 35px;
+    color: #2b2a2c;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.instruments__text {
+    color: #6A696B;
+    line-height: 1.5;
+}
+
+.slick-slide {
+    outline: none;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.slick-prev {
+    left: -5%;
+    background: url("../img/slider/back.svg") 0 0/100% no-repeat;
+}
+
+.slick-next {
+    right: -5%;
+    background: url("../img/slider/next.svg") 0 0/100% no-repeat;
+}
+
+.slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.slick-dots li {
+    list-style: none;
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border: 1px solid #2b2a2c;
+    border-radius: 50%;
+    outline: none;
+    margin: 0 15px;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #2b2a2c;
+}
+
 *,
 :before,
 :after {
@@ -193,4 +299,21 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.title {
+    font-size: 45px;
+    color: #2b2a2c;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 30px;
+    color: #8d8d8e;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 100px;
 }
