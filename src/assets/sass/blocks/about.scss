@@ -1,0 +1,29 @@
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 100px;
+
+    & .title {
+        text-align: left;
+    }
+
+    & .subtitle {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+}
+
+.about__content {
+    max-width: 50%;
+}
+
+.about__text {
+    font-size: 15px;
+    color: $black;
+    line-height: 1.5;
+
+    margin-bottom: 40px;
+}
