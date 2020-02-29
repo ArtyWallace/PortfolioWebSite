@@ -1,0 +1,30 @@
+.nav__link {
+    // font-weight: 700;
+    margin-left: 10px;
+    text-transform: uppercase;
+
+    position: relative;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: #2b2a2c;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        z-index: 1;
+        transition: width .2s linear; 
+    }
+
+    &:hover, 
+    :active {
+        &::after {
+            width: 100%;
+        }
+    }
+}

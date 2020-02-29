@@ -1,0 +1,24 @@
+.social {
+    margin-left: 13px;
+    margin-bottom: 50px;
+}
+
+.social__item {
+    text-decoration: none;
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    
+}
+
+.social__icon {
+
+    transition: transform .4s linear;
+
+    &:hover {
+        transform: rotateZ(360deg);
+    }
+}
