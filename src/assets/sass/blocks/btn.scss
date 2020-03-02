@@ -23,7 +23,9 @@
         margin-left: 13px;
     }
 
-    &--about {
-        margin: 0;
+    &--form {
+        font-family: inherit;
+        color: $black;
+        font-weight: 700;
     }
 }

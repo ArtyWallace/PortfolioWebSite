@@ -17,7 +17,7 @@
     font-size: 18px;
 }
 
-.header__contacts {
+.contacts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -29,7 +29,13 @@
     align-items: center;
 }
 
-.header__contacts-item {
+.contacts--feedback {
+    color: #6A696B;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.contacts__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -38,11 +44,11 @@
     align-items: center;
 }
 
-.header__contacts-item:first-child {
+.contacts__item:first-child {
     margin-right: 20px;
 }
 
-.header__contacts-item a {
+.contacts__item a {
     margin-left: 10px;
 }
 
@@ -119,6 +125,10 @@
     margin-bottom: 50px;
 }
 
+.social--footer {
+    margin-bottom: 0;
+}
+
 .social__item {
     text-decoration: none;
     margin-right: 10px;
@@ -128,7 +138,7 @@
     margin-right: 0;
 }
 
-.social__icon {
+.social__icon--intro {
     -webkit-transition: -webkit-transform .4s linear;
     transition: -webkit-transform .4s linear;
     -o-transition: transform .4s linear;
@@ -136,7 +146,7 @@
     transition: transform .4s linear, -webkit-transform .4s linear;
 }
 
-.social__icon:hover {
+.social__icon--intro:hover {
     -webkit-transform: rotateZ(360deg);
     -ms-transform: rotate(360deg);
     transform: rotateZ(360deg);
@@ -166,8 +176,10 @@
     margin-left: 13px;
 }
 
-.btn--about {
-    margin: 0;
+.btn--form {
+    font-family: inherit;
+    color: #2b2a2c;
+    font-weight: 700;
 }
 
 .instruments__slider {
@@ -357,6 +369,153 @@
     color: #2b2a2c;
     line-height: 1.5;
     margin-bottom: 40px;
+}
+
+.blog__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.blog__item {
+    width: 30%;
+    position: relative;
+}
+
+.blog__photo {
+    margin-bottom: 20px;
+}
+
+.blog__date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #2b2a2c;
+}
+
+.blog__title {
+    font-size: 18px;
+    color: #2b2a2c;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+
+.blog__text {
+    color: #6A696B;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+
+.feedback__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.feedback__content {
+    max-width: 50%;
+}
+
+.feedback__content .title {
+    text-align: left;
+}
+
+.feedback__content .subtitle {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.input {
+    width: 100%;
+    padding: 21px 28px;
+    margin: 10px 0 27px;
+    display: block;
+    border: 1px solid rgba(106, 105, 107, 0.3);
+    border-radius: 27px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 300;
+    outline: none;
+}
+
+.input--textarea {
+    height: 200px;
+    resize: none;
+}
+
+.input:focus {
+    border-color: #6A696B;
+}
+
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #2b2a2c;
+}
+
+.footer__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer__info {
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer__license {
+    color: #8d8d8e;
+}
+
+.footer__link {
+    color: #8d8d8e;
+    margin-right: 10px;
+}
+
+.footer__link:last-child {
+    margin-right: 0;
+}
+
+.footer__link:hover {
+    color: #ffffff;
 }
 
 *,

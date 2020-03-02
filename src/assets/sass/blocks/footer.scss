@@ -1,0 +1,35 @@
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: $black;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__info {
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__license {
+    color: $gray-light;
+}
+
+.footer__link {
+    color: $gray-light;
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        color: $white;
+    }
+}

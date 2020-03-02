@@ -12,21 +12,3 @@
     font-size: 18px;
 }
 
-.header__contacts {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &-item {
-        display: flex;
-        align-items: center;
-        
-        &:first-child {
-            margin-right: 20px;
-        }
-
-        & a {
-            margin-left: 10px;
-        }
-    }
-}

@@ -1,0 +1,24 @@
+.feedback__inner {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 100px;
+}
+
+.feedback__content {
+    max-width: 50%;
+
+    & .title {
+        text-align: left;
+    }
+
+    & .subtitle {
+        text-align: left;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+

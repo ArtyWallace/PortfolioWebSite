@@ -1,0 +1,43 @@
+.blog__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.blog__item {
+    width: 30%;
+
+    position: relative;
+}
+
+.blog__photo {
+    margin-bottom: 20px;
+
+}
+
+.blog__date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px;
+
+    font-size: 18px;
+    color: $white;
+    font-weight: 700;    
+
+    background-color: $black;
+}
+
+.blog__title {
+    font-size: 18px;
+    color: $black;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+
+.blog__text {
+    color: $gray;
+    font-weight: 300;
+    margin-bottom: 35px;
+}

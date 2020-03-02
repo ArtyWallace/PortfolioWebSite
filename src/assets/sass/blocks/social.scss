@@ -1,6 +1,10 @@
 .social {
     margin-left: 13px;
     margin-bottom: 50px;
+
+    &--footer {
+        margin-bottom: 0;
+    }
 }
 
 .social__item {
@@ -15,10 +19,11 @@
 }
 
 .social__icon {
+    &--intro {
+        transition: transform .4s linear;
 
-    transition: transform .4s linear;
-
-    &:hover {
-        transform: rotateZ(360deg);
+        &:hover {
+            transform: rotateZ(360deg);
+        }
     }
 }
