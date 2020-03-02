@@ -57,7 +57,7 @@
                         <img class="social__icon social__icon--intro" src="assets/img/social/whatsapp.svg" height="30px" alt="">
                     </a>
                 </div>
-                <button class="btn btn--intro">Напиши мне</button>
+                <button class="btn btn--intro" id="introButton">Напиши мне</button>
             </div>
             <img src="assets/img/intro/intro__photo.png" alt="" class="intro__photo">
         </div>
@@ -115,29 +115,29 @@
         <h1 class="title">Портфолио</h1>
         <p class="subtitle">Выполненные проекты:</p>
         <div class="works">
-            <div class="works__item">
+            <div class="works__item" id="worksItem">
                 <img src="/assets/img/works/active-box.jpg" alt="" class="works__photo">
                 <div class="works__content">
-                    <div class="works__title">ActiveBox</div>
-                    <div class="works__category">LANDING-PAGE
+                    <div class="works__title" id="worksTitle">ActiveBox</div>
+                    <div class="works__category" id="worksSubtitle">LANDING-PAGE
                         <time datetime="2019-11-25">2019</time>
                     </div>
                 </div>
             </div>
-            <div class="works__item">
+            <div class="works__item" id="worksItem">
                 <img src="/assets/img/works/minimo.jpg" alt="" class="works__photo">
                 <div class="works__content">
-                    <div class="works__title">MINIMO</div>
-                    <div class="works__category">LANDING-PAGE
+                    <div class="works__title" id="worksTitle">MINIMO</div>
+                    <div class="works__category" id="worksSubtitle">LANDING-PAGE
                         <time datetime="2019-11-25">2019</time>
                     </div>
                 </div>
             </div>
-            <div class="works__item">
+            <div class="works__item" id="worksItem">
                 <img src="https://placehold.it/380x190" alt="" class="works__photo">
                 <div class="works__content">
-                    <div class="works__title">MINIMO</div>
-                    <div class="works__category">LANDING-PAGE
+                    <div class="works__title" id="worksTitle">MINIMO</div>
+                    <div class="works__category" id="worksSubtitle">LANDING-PAGE
                         <time datetime="2019-11-25">2019</time>
                     </div>
                 </div>
@@ -259,6 +259,38 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <!-- feedBackModal -->
+
+    <div class="modal" id="feedbackModal">
+        <div class="modal-feedback">
+                <div class="modal-feedback__content">
+                    <div class="title">Поговорим?</div>
+                    <div class="subtitle">Позвони мне или оставь запрос</div>
+                    <form action="/" class="form">
+                        <label for="">Е-Мэйл</label>
+                        <input class="input" type="email" placeholder="Введите Е-Мэйл..">
+                        <label for="">Запрос</label>
+                        <textarea class="input input--textarea" placeholder="Введите ваш запрос.."></textarea>
+                        <input type="submit" class="btn btn--form btn--modal">
+                     </form>
+                </div>
+                <img src="https://placehold.it/470x676" alt="" class="modal-feedback__photo">
+        </div>
+    </div>
+
+    <!-- worksModal -->
+
+    <div class="modal" id="worksModal">
+        <div class="modal-works">
+            <img src="" alt="" class="modal-works__photo">
+            <div class="modal-works__content">
+                <div class="title" id="worksModalTitle"></div>
+                <div class="subtitle" id="worksModalSubtitle"></div>
+            </div>
+        </div>
+    </div>
 
 
 
