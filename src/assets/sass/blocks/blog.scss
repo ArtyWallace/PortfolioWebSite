@@ -1,7 +1,7 @@
 .blog__content {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .blog__item {
@@ -40,4 +40,19 @@
     color: $gray;
     font-weight: 300;
     margin-bottom: 35px;
+}
+
+.blog__news {
+    display: block;
+    text-align: right;    
+    text-decoration: underline;
+    color: $gray;
+
+    transition: color .2s linear;
+
+    margin-bottom: 100px;
+
+    &:hover {
+        color: $black;
+    }
 }

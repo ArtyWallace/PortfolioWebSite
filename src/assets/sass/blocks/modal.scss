@@ -9,9 +9,10 @@
     left: 0;
     background-color: rgba(43,42,44,0.8);
 
-    &-feedback {
+    &-window {
         position: relative;
-        height: auto;
+        height: 65%;
+        max-height: 676px;
         max-width: 1200px;
         margin: auto;
         display: flex;
@@ -41,10 +42,29 @@
         width: 50%;
     }
 
-    &-works {
-        display: flex;
-        justify-content: space-between;
+    &-works__photo {
+        width: 70%;
     }
 
+    &-works__content {
+        padding: 25px;
     
+        & .title {
+            font-size: 30px;
+            text-align: left;
+        }
+
+        & .subtitle {
+            font-size: 20px;
+            text-align: left;
+            margin-bottom: 50px;
+        }
+
+        & .description {
+            color: $gray;
+            line-height: 1.5;
+            margin-bottom: 50px;
+        }
+    
+    }
 }
