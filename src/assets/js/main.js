@@ -1,4 +1,5 @@
 let introHeight = document.querySelector("#intro").scrollHeight; // height of intro block 
+let fixedBar = document.getElementsByClassName("fixed");
 let feedbackModal = document.querySelector("#feedbackModal"); // feedback modal window
 let introBtn = document.querySelector("#introButton"); // feedback modal window button
 let worksModal = document.querySelector("#worksModal"); // works modal window
@@ -22,7 +23,7 @@ for (let anchor of anchors) {
   });
 }
 
-//=============== Fixed menu ============================//
+
 
 
 // Feedback modal
