@@ -33,3 +33,33 @@
         color: $white;
     }
 }
+
+@media (max-width: 768px) {
+    .footer__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__info {
+        flex-direction: column;
+    }
+
+    .footer__license {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 414px) {
+    .footer__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__info {
+        flex-direction: column;
+    }
+
+    .footer__license {
+        margin-bottom: 10px;
+    }
+}

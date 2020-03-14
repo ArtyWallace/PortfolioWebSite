@@ -22,3 +22,9 @@
         color: $black;
     }
 }
+
+@media (max-width: 414px) {
+    .fixed__link {
+        font-size: 14px;
+    }
+}

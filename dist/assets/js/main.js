@@ -7,6 +7,8 @@ let worksItem = document.querySelectorAll("#worksItem");
 let aboutBtn = document.querySelector("#aboutBtn");
 let works = document.querySelector("#worksInner");
 let anchors = document.querySelectorAll('a[href*="#"]'); // anchors for sliding between blocks
+let burger = document.querySelector("#burger");
+let hiddenNav = document.querySelector("#hiddenNav");
 
 
 //=============== Smooth slide to anchor ============================//
@@ -24,6 +26,17 @@ for (let anchor of anchors) {
 }
 
 
+burger.onclick = () => {
+  if (burger.classList.contains("show")) {
+    hiddenNav.style.display = "none";
+    burger.classList.remove("show");
+  } else {
+      hiddenNav.style.display = "block";
+      burger.classList.add("show");
+
+  } 
+
+}
 
 
 // Feedback modal
@@ -38,20 +51,20 @@ aboutBtn.onclick = () => {
 
 // Works modal
 // Open
-worksItem.forEach(element => {
-  element.onclick = () => {
-    worksModal.style.display = "flex";
-  }
-});
+// worksItem.forEach(element => {
+//   element.onclick = () => {
+//     worksModal.style.display = "flex";
+//   }
+// });
 
 // Closing modal windows
 window.onclick = function(event) {
   if (event.target == feedbackModal) {
     feedbackModal.style.display = "none";
   }
-  if (event.target == worksModal) {
-    worksModal.style.display = "none";
-  }
+  // if (event.target == worksModal) {
+  //   worksModal.style.display = "none";
+  // }
 }
 
 

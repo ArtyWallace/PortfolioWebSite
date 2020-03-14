@@ -27,3 +27,21 @@
         }
     }
 }
+
+@media (max-width: 414px) {
+    .social {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+
+        &--footer {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .social--footer {
+        margin-bottom: 10px;
+    }
+}

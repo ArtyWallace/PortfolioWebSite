@@ -6,6 +6,8 @@
 
     margin-bottom: 100px;
 
+    padding-top: 15px;
+
     & .title {
         text-align: left;
     }
@@ -26,4 +28,32 @@
     line-height: 1.5;
 
     margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .about__photo {
+        width: 40%;
+    }
+}
+
+@media (max-width: 414px) {
+    .about {
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+
+        & .title, .subtitle {
+            text-align: center;
+        }
+    }
+
+    .about__content {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about__text {
+        text-align: justify;
+    }
 }

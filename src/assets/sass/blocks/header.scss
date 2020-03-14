@@ -12,3 +12,19 @@
     font-size: 18px;
 }
 
+.burger {
+    display: none;
+}
+
+@media (max-width: 1140px) {
+    .burger {
+        display: block;
+    }
+}
+
+@media (max-width: 414px) {
+    .header {
+        margin-top: 15px;
+    }
+}
+

@@ -1,5 +1,9 @@
+.instruments {
+    padding-top: 15px;
+}
+
 .instruments__slider {
-    width: 100%;
+    width: 90%;
     margin: 100px auto;
 }
 
@@ -16,6 +20,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    padding-right: 20px;
 }
 
 .instruments__title {
@@ -29,6 +35,47 @@
     color: $gray;
     line-height: 1.5;
 
+}
+
+@media (max-width: 768px) {
+    .instruments__item {
+        flex-direction: column;
+    }
+
+    .instruments__content {
+        padding-right: 0;
+    }
+
+    .instruments__title {
+        text-align: center;
+    }
+
+    .instruments__text {
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+
+    .instruments__photo {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 414px) {
+    .instruments__slider {
+        margin-top: 0;
+    }
+
+    .instruments__title {
+        font-size: 25px;
+    }
+
+    .instruments__text{
+        font-size: 13px;
+    }
+
+    .instruments__photo {
+        width: 75%;
+    }
 }
 
 

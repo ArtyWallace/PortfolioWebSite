@@ -24,9 +24,12 @@
     }
 
     &--form {
+        max-width: 200px;
         font-family: inherit;
         color: $black;
         font-weight: 700;
+
+        cursor: pointer;
     }
 
     &--modal-feedback {
@@ -42,5 +45,12 @@
     &--modal-works {
         display: block;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 414px) {
+    .btn--intro, .btn--about {
+        max-width: 200px;
+        margin: 0 auto 50px;
     }
 }

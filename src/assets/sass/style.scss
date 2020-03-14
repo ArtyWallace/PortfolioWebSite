@@ -34,6 +34,30 @@ body {
     margin: 0 auto;
 }
 
+@media (max-width: 1140px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 680px
+    }
+}
+
+@media (max-width: 414px) {
+    .container {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 340px) {
+    .container {
+        max-width: 270px;
+    }
+}
+
 .title {
     font-size: 45px;
     color: $black;
@@ -52,6 +76,18 @@ body {
     margin-bottom: 100px;
 }
 
+@media (max-width: 414px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+}
+
+@import "slick";
 @import "blocks/header";
 @import "blocks/contacts";
 @import "blocks/nav";
@@ -68,4 +104,4 @@ body {
 @import "blocks/footer";
 @import "blocks/modal";
 @import "blocks/fixedBar";
-@import "slick";
+@import "blocks/hiddenNav";

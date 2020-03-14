@@ -11,9 +11,7 @@
 
     &-window {
         position: relative;
-        height: 65%;
-        max-height: 676px;
-        max-width: 1200px;
+        height: auto;
         margin: auto;
         display: flex;
         justify-content: space-between;

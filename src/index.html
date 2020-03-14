@@ -32,6 +32,7 @@
                     <a href="#blog" class="nav__link">Блог</a>
                     <a href="#feedback" class="nav__link">Контакты</a>
                 </nav>
+                <img src="assets/img/burger-menu/burger-menu.svg" width="30px" alt="" class="burger" id="burger">
             </div>
         </div>
     </header>
@@ -43,6 +44,15 @@
         <a href="#about" class="fixed__link">Обо мне</a>
         <a href="#blog" class="fixed__link">Блог</a>
         <a href="#feedback" class="fixed__link">Контакты</a>
+    </nav>
+
+    <!-- Hidden bar -->
+    <nav id="hiddenNav">
+        <a href="#instruments" class="nav__link">Инструменты</a>
+        <a href="#works" class="nav__link">Работы</a>
+        <a href="#about" class="nav__link">Обо мне</a>
+        <a href="#blog" class="nav__link">Блог</a>
+        <a href="#feedback" class="nav__link">Контакты</a>
     </nav>
 
     <!-- Intro -->
@@ -69,6 +79,7 @@
                 <button class="btn btn--intro" id="introButton">Напиши мне</button>
             </div>
             <img src="assets/img/intro/intro__photo.png" alt="" class="intro__photo">
+            <!-- <img src="https://placehold.it/100x100" alt="" class="intro__photo"> -->
         </div>
     </div>
 
@@ -176,7 +187,7 @@
 
     <div class="container" id="blog">
         <div class="title">Почитать</div>
-        <div class="subtitle">Об интересном и не очень</div>
+        <div class="subtitle">О разработке и не только</div>
 
         <div class="blog__content">
             <div class="blog__item">
@@ -227,16 +238,18 @@
                         <a href="mailto:artem.prudnikov57@gmail.com">artem.prudnikov57@gmail.com</a>
                     </div>
                 </div>
-                <form action="/" class="form">
-                    <label for="">Е-Мэйл</label>
-                    <input class="input" type="email" placeholder="Введите Е-Мэйл..">
-                    <label for="">Запрос</label>
-                    <textarea class="input input--textarea" placeholder="Введите ваш запрос.."></textarea>
-
+                <form class="form" id="form">
+                    <label for="name">Ваше имя</label>
+                    <input name="name" class="input" type="text" placeholder="Введите имя.." required>
+                    <label for="email">Ваш Е-Мэйл</label>
+                    <input name="email" class="input" type="email" placeholder="Введите Е-Мэйл.." required>
+                    <label for="text">Запрос</label>
+                    <textarea name="text" class="input input--textarea" placeholder="Введите ваш запрос.." required></textarea>
+                    
                     <input type="submit" class="btn btn--form">
                  </form>
             </div>
-            <img src="https://placehold.it/436x600" alt="" class="feedback__photo">
+            <!-- <img src="assets/img/feedback/feedback.png" alt="" class="feedback__photo"> -->
         </div>
     </div>
 
@@ -245,7 +258,7 @@
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__info">
-                    <div class="footer__license">Artem Prudnikov 2020 |</div>
+                    <div class="footer__license">Made with &#10084; by Artem Prudnikov in 2020 </div>
                     <div class="social social--footer">
                         <a href="https://ru-ru.facebook.com/" target="blank" class="social__item">
                             <img class="social__icon" src="assets/img/social-footer/facebook.svg" height="30px" alt="">
@@ -280,15 +293,17 @@
                 <div class="modal-feedback__content">
                     <div class="title">Поговорим?</div>
                     <div class="subtitle">Позвони мне или оставь запрос</div>
-                    <form action="/" class="form">
-                        <label for="">Е-Мэйл</label>
-                        <input class="input" type="email" placeholder="Введите Е-Мэйл..">
-                        <label for="">Запрос</label>
-                        <textarea class="input input--textarea" placeholder="Введите ваш запрос.."></textarea>
+                    <form class="form">
+                        <label for="name"> Ваше имя</label>
+                        <input class="input" name="name" type="text" placeholder="Введите имя..">
+                        <label for="email">Ваш Е-Мэйл</label>
+                        <input class="input" name="email" type="email" placeholder="Введите Е-Мэйл..">
+                        <label for="text">Запрос</label>
+                        <textarea class="input input--textarea" name="text" placeholder="Введите ваш запрос.."></textarea>
                         <input type="submit" class="btn btn--form btn--modal-feedback">
                      </form>
                 </div>
-                <img src="https://placehold.it/470x676" alt="" class="modal-feedback__photo">
+                <img src="assets/img/modal-feedback/modal-feedback.png" alt="" class="modal-feedback__photo">
         </div>
     </div>
 
@@ -321,9 +336,12 @@
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/form.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/slider.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/fixed.js"></script>
+    <script src="assets/js/hiddenNav.js"></script>
+    
 </body>
 </html>
