@@ -25,7 +25,7 @@ for (let anchor of anchors) {
   });
 }
 
-
+// Burger menu
 burger.onclick = () => {
   if (burger.classList.contains("show")) {
     hiddenNav.style.display = "none";
@@ -49,50 +49,39 @@ aboutBtn.onclick = () => {
   feedbackModal.style.display = "flex";
 }
 
-// Works modal
-// Open
-// worksItem.forEach(element => {
-//   element.onclick = () => {
-//     worksModal.style.display = "flex";
-//   }
-// });
-
-// Closing modal windows
+// Closing
 window.onclick = function(event) {
   if (event.target == feedbackModal) {
     feedbackModal.style.display = "none";
   }
-  // if (event.target == worksModal) {
-  //   worksModal.style.display = "none";
-  // }
 }
 
 
+// Old ver of works block 
+// for (i = 0; i < worksItem.length; i++) {
+//   let item = worksItem[i];
+//   item.addEventListener("mouseover", function() {
+//     let drop = document.createElement("div");
+//     let title = document.createElement("div");
 
-for (i = 0; i < worksItem.length; i++) {
-  let item = worksItem[i];
-  item.addEventListener("mouseover", function() {
-    let drop = document.createElement("div");
-    let title = document.createElement("div");
+//     drop.classList.add("works__drop");
+//     title.classList.add("drop__title");
 
-    drop.classList.add("works__drop");
-    title.classList.add("drop__title");
+//     drop.id = "drop";
+//     title.id = "dropTitle";
 
-    drop.id = "drop";
-    title.id = "dropTitle";
+//     drop.appendChild(title);
+//     item.appendChild(drop);
 
-    drop.appendChild(title);
-    item.appendChild(drop);
+//     works.style.marginBottom = "60px";
+//   });
+//   item.addEventListener("mouseout", function() {
+//     let drop = document.getElementById("drop");
 
-    works.style.marginBottom = "60px";
-  });
-  item.addEventListener("mouseout", function() {
-    let drop = document.getElementById("drop");
-
-    item.removeChild(drop);
-    works.style.marginBottom = "100px";
-  });
-}
+//     item.removeChild(drop);
+//     works.style.marginBottom = "100px";
+//   });
+// }
 
 
 

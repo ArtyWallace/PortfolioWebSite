@@ -131,36 +131,16 @@
 
     <!-- Works -->
 
-    <div class="container" id="works">
-        <h1 class="title">Портфолио</h1>
-        <p class="subtitle">Выполненные проекты:</p>
-        <div class="works" id="worksInner">
-            <div class="works__item" id="worksItem">
-                <img src="assets/img/works/active-box.jpg" alt="" class="works__photo">
-                <div class="works__content">
-                    <div class="works__title" id="worksTitle">ActiveBox</div>
-                    <div class="works__category" id="worksSubtitle">LANDING-PAGE
-                        <time datetime="2019-11-25">2019</time>
+    <div class="works" id="works">
+        <div class="works__content">
+            <div class="works__item">
+                <img src="assets/img/works/work-car.jpg" alt="" class="work__img">
+                <div class="work__description">
+                    <div class="work__title">Car repair service</div>
+                    <div class="work__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat sapiente obcaecati fugiat facilis. Officia fugiat iste a, nam nemo tempora. Deleniti, tempora natus? Tempora deserunt iure at, officiis, cumque autem aliquam corporis tempore, labore amet quis quaerat ipsum? Dolorum adipisci iste aperiam optio at, ducimus vitae, voluptatem iusto dolore deserunt saepe! Voluptates repudiandae nulla nam quis architecto eveniet neque necessitatibus, quia dolorem quidem harum nobis hic ipsam est dignissimos excepturi praesentium sapiente officia aspernatur tempore. Aut asperiores quos sint sed nulla modi, id rem totam esse labore, consequatur cum minus et non expedita quod ullam dolorum est excepturi eum ratione iusto. Repellat impedit cumque modi autem quibusdam nulla quae? Praesentium nobis saepe omnis, quibusdam repellat voluptatum impedit soluta ab, dolorum expedita porro? Alias, fugit, reprehenderit culpa veritatis vitae voluptate earum ipsam, quae voluptates possimus nobis recusandae rem fugiat? Quibusdam veritatis eligendi consequatur, eum inventore modi excepturi natus dolorem impedit enim deleniti dolor reiciendis assumenda praesentium temporibus quidem repellendus earum in. Aliquam nobis laudantium quaerat cupiditate aspernatur magni quisquam nihil, ea tempore. Est doloribus recusandae magnam quaerat error illo eum, culpa iste commodi inventore quas asperiores earum, architecto aut nihil! Nesciunt facere omnis et rem, officiis quidem similique necessitatibus tempora!</p>
                     </div>
-                    <a href="https://google.com" class="works__link">ActiveBox</a>
-                </div>
-            </div>
-            <div class="works__item" id="worksItem">
-                <img src="assets/img/works/minimo.jpg" alt="" class="works__photo">
-                <div class="works__content">
-                    <div class="works__title" id="worksTitle">MINIMO</div>
-                    <div class="works__category" id="worksSubtitle">LANDING-PAGE
-                        <time datetime="2019-11-25">2019</time>
-                    </div>
-                </div>
-            </div>
-            <div class="works__item" id="worksItem">
-                <img src="https://placehold.it/380x200" alt="" class="works__photo">
-                <div class="works__content">
-                    <div class="works__title" id="worksTitle">MINIMO</div>
-                    <div class="works__category" id="worksSubtitle">LANDING-PAGE
-                        <time datetime="2019-11-25">2019</time>
-                    </div>
+                    <a href="#" class="btn btn--work">Перейти</a>
                 </div>
             </div>
         </div>
@@ -240,11 +220,11 @@
                 </div>
                 <form class="form" id="form">
                     <label for="name">Ваше имя</label>
-                    <input name="name" class="input" type="text" placeholder="Введите имя.." required>
+                    <input name="name" id="name" class="input" type="text" placeholder="Введите имя.." required>
                     <label for="email">Ваш Е-Мэйл</label>
-                    <input name="email" class="input" type="email" placeholder="Введите Е-Мэйл.." required>
+                    <input name="email" id="email" class="input" type="email" placeholder="Введите Е-Мэйл.." required>
                     <label for="text">Запрос</label>
-                    <textarea name="text" class="input input--textarea" placeholder="Введите ваш запрос.." required></textarea>
+                    <textarea name="text" class="input input--textarea" id="text" placeholder="Введите ваш запрос.." required></textarea>
                     
                     <input type="submit" class="btn btn--form">
                  </form>
@@ -295,11 +275,11 @@
                     <div class="subtitle">Позвони мне или оставь запрос</div>
                     <form class="form">
                         <label for="name"> Ваше имя</label>
-                        <input class="input" name="name" type="text" placeholder="Введите имя..">
+                        <input class="input" id="name" name="name" type="text" placeholder="Введите имя..">
                         <label for="email">Ваш Е-Мэйл</label>
-                        <input class="input" name="email" type="email" placeholder="Введите Е-Мэйл..">
+                        <input class="input" id="email" name="email" type="email" placeholder="Введите Е-Мэйл..">
                         <label for="text">Запрос</label>
-                        <textarea class="input input--textarea" name="text" placeholder="Введите ваш запрос.."></textarea>
+                        <textarea class="input input--textarea" id="text" name="text" placeholder="Введите ваш запрос.."></textarea>
                         <input type="submit" class="btn btn--form btn--modal-feedback">
                      </form>
                 </div>
