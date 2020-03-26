@@ -1,0 +1,322 @@
+<?php require "assets/php/config.php"; ?>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="contacts">
+                    <div class="contacts__item">
+                        <img src="assets/img/contacts-img/call.svg" height="25px" alt="">
+                        <a href="tel:+79184924461">+7 (918) 492-44-61</a>
+                    </div>
+                    <div class="contacts__item">
+                        <img src="assets/img/contacts-img/email.svg" height="25px" alt="">
+                        <a href="mailto:artem.prudnikov57@gmail.com">artem.prudnikov57@gmail.com</a>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="#instruments" class="nav__link">Инструменты</a>
+                    <a href="#works" class="nav__link">Работы</a>
+                    <a href="#about" class="nav__link">Обо мне</a>
+                    <a href="#blog" class="nav__link">Блог</a>
+                    <a href="#feedback" class="nav__link">Контакты</a>
+                </nav>
+                <img src="assets/img/burger-menu/burger-menu.svg" width="30px" alt="" class="burger" id="burger">
+            </div>
+        </div>
+    </header>
+
+    <!-- Fixed bar -->
+    <nav class="fixed" id="fixedBar">
+        <a href="#instruments" class="fixed__link">Инструменты</a>
+        <a href="#works" class="fixed__link">Работы</a>
+        <a href="#about" class="fixed__link">Обо мне</a>
+        <a href="#blog" class="fixed__link">Блог</a>
+        <a href="#feedback" class="fixed__link">Контакты</a>
+    </nav>
+
+    <!-- Hidden bar -->
+    <nav id="hiddenNav">
+        <a href="#instruments" class="nav__link">Инструменты</a>
+        <a href="#works" class="nav__link">Работы</a>
+        <a href="#about" class="nav__link">Обо мне</a>
+        <a href="#blog" class="nav__link">Блог</a>
+        <a href="#feedback" class="nav__link">Контакты</a>
+    </nav>
+
+    <!-- Intro -->
+    <div class="container">
+        <div class="intro" id="intro">
+            <div class="intro__content">
+                <div class="intro__suptitle">Привет, меня зовут</div>
+                <div class="intro__title">Артем Прудников</div>
+                <div class="intro__subtitle">я веб-разработчик</div>
+                <div class="social">
+                    <a href="https://ru-ru.facebook.com/" target="blank" class="social__item">
+                        <img class="social__icon social__icon--intro" src="assets/img/social/facebook.svg" height="30px" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=ru" target="blank" class="social__item">
+                        <img class="social__icon social__icon--intro" src="assets/img/social/instagram.svg" height="30px" alt="">
+                    </a>
+                    <a href="https://www.skype.com/ru/" target="blank" class="social__item">
+                        <img class="social__icon social__icon--intro" src="assets/img/social/skype.svg" height="30px" alt="">
+                    </a>
+                    <a href="https://www.whatsapp.com/" target="blank" class="social__item">
+                        <img class="social__icon social__icon--intro" src="assets/img/social/whatsapp.svg" height="30px" alt="">
+                    </a>
+                </div>
+                <button class="btn btn--intro" id="introButton">Напиши мне</button>
+            </div>
+            <img src="assets/img/intro/intro__photo.png" alt="" class="intro__photo">
+            <!-- <img src="https://placehold.it/100x100" alt="" class="intro__photo"> -->
+        </div>
+    </div>
+
+    <!-- Instruments -->
+    <div class="instruments" id="instruments">
+        <h1 class="title">Инструменты</h1>
+        <p class="subtitle">В своей работе я использую:</p>
+        <div class="container">
+            <div class="instruments__slider">
+                <div>
+                    <div class="instruments__item">
+                        <div class="instruments__content">
+                            <div class="instruments__title">HTML5</div>
+                            <div class="instruments__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit soluta repudiandae dolorem repellat, quam ipsam sed hic neque eius beatae similique atque laborum adipisci cumque, totam omnis quod blanditiis!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit soluta repudiandae dolorem repellat, quam ipsam sed hic neque eius beatae similique atque laborum adipisci cumque, totam omnis quod blanditiis!</p>
+                            </div>
+                        </div>
+                        <img src="assets/img/instruments/html5.png" alt="" class="instruments__photo" width="300px">
+                    </div>
+                </div>
+                <div>
+                    <div class="instruments__item">
+                        <div class="instruments__content">
+                            <div class="instruments__title">CSS3</div>
+                            <div class="instruments__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit soluta repudiandae dolorem repellat, quam ipsam sed hic neque eius beatae similique atque laborum adipisci cumque, totam omnis quod blanditiis!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit soluta repudiandae dolorem repellat, quam ipsam sed hic neque eius beatae similique atque laborum adipisci cumque, totam omnis quod blanditiis!</p>
+                            </div>
+                        </div>
+                        <img src="assets/img/instruments/css3.png" alt="" class="instruments__photo" width="300px">
+                    </div>
+                </div>
+                <div>
+                    <div class="instruments__item">
+                        <div class="instruments__content">
+                            <div class="instruments__title">JavaScript</div>
+                            <div class="instruments__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit soluta repudiandae dolorem repellat, quam ipsam sed hic neque eius beatae similique atque laborum adipisci cumque, totam omnis quod blanditiis!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sit soluta repudiandae dolorem repellat, quam ipsam sed hic neque eius beatae similique atque laborum adipisci cumque, totam omnis quod blanditiis!</p>
+                            </div>
+                        </div>
+                        <img src="assets/img/instruments/js.png" alt="" class="instruments__photo" width="300px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Works -->
+
+    <div class="works" id="works">
+        <div class="works__content">
+            <div class="works__item">
+                <img src="assets/img/works/work-car.jpg" alt="" class="work__img">
+                <div class="work__description">
+                    <div class="work__title">Car repair service</div>
+                    <div class="work__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat sapiente obcaecati fugiat facilis. Officia fugiat iste a, nam nemo tempora. Deleniti, tempora natus? Tempora deserunt iure at, officiis, cumque autem aliquam corporis tempore, labore amet quis quaerat ipsum? Dolorum adipisci iste aperiam optio at, ducimus vitae, voluptatem iusto dolore deserunt saepe! Voluptates repudiandae nulla nam quis architecto eveniet neque necessitatibus, quia dolorem quidem harum nobis hic ipsam est dignissimos excepturi praesentium sapiente officia aspernatur tempore. Aut asperiores quos sint sed nulla modi, id rem totam esse labore, consequatur cum minus et non expedita quod ullam dolorum est excepturi eum ratione iusto. Repellat impedit cumque modi autem quibusdam nulla quae? Praesentium nobis saepe omnis, quibusdam repellat voluptatum impedit soluta ab, dolorum expedita porro? Alias, fugit, reprehenderit culpa veritatis vitae voluptate earum ipsam, quae voluptates possimus nobis recusandae rem fugiat? Quibusdam veritatis eligendi consequatur, eum inventore modi excepturi natus dolorem impedit enim deleniti dolor reiciendis assumenda praesentium temporibus quidem repellendus earum in. Aliquam nobis laudantium quaerat cupiditate aspernatur magni quisquam nihil, ea tempore. Est doloribus recusandae magnam quaerat error illo eum, culpa iste commodi inventore quas asperiores earum, architecto aut nihil! Nesciunt facere omnis et rem, officiis quidem similique necessitatibus tempora!</p>
+                    </div>
+                    <a href="#" class="btn btn--work">Перейти</a>
+                </div>
+            </div>
+            <div class="works__item">
+                <img src="assets/img/works/work-minimo.jpg" alt="" class="work__img">
+                <div class="work__description">
+                    <div class="work__title">Car repair service</div>
+                    <div class="work__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat sapiente obcaecati fugiat facilis. Officia fugiat iste a, nam nemo tempora. Deleniti, tempora natus? Tempora deserunt iure at, officiis, cumque autem aliquam corporis tempore, labore amet quis quaerat ipsum? Dolorum adipisci iste aperiam optio at, ducimus vitae, voluptatem iusto dolore deserunt saepe! Voluptates repudiandae nulla nam quis architecto eveniet neque necessitatibus, quia dolorem quidem harum nobis hic ipsam est dignissimos excepturi praesentium sapiente officia aspernatur tempore. Aut asperiores quos sint sed nulla modi, id rem totam esse labore, consequatur cum minus et non expedita quod ullam dolorum est excepturi eum ratione iusto. Repellat impedit cumque modi autem quibusdam nulla quae? Praesentium nobis saepe omnis, quibusdam repellat voluptatum impedit soluta ab, dolorum expedita porro? Alias, fugit, reprehenderit culpa veritatis vitae voluptate earum ipsam, quae voluptates possimus nobis recusandae rem fugiat? Quibusdam veritatis eligendi consequatur, eum inventore modi excepturi natus dolorem impedit enim deleniti dolor reiciendis assumenda praesentium temporibus quidem repellendus earum in. Aliquam nobis laudantium quaerat cupiditate aspernatur magni quisquam nihil, ea tempore. Est doloribus recusandae magnam quaerat error illo eum, culpa iste commodi inventore quas asperiores earum, architecto aut nihil! Nesciunt facere omnis et rem, officiis quidem similique necessitatibus tempora!</p>
+                    </div>
+                    <a href="#" class="btn btn--work">Перейти</a>
+                </div>
+            </div>
+            <div class="works__item">
+                <img src="assets/img/works/franco-shop.jpg" alt="" class="work__img">
+                <div class="work__description">
+                    <div class="work__title">Car repair service</div>
+                    <div class="work__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat sapiente obcaecati fugiat facilis. Officia fugiat iste a, nam nemo tempora. Deleniti, tempora natus? Tempora deserunt iure at, officiis, cumque autem aliquam corporis tempore, labore amet quis quaerat ipsum? Dolorum adipisci iste aperiam optio at, ducimus vitae, voluptatem iusto dolore deserunt saepe! Voluptates repudiandae nulla nam quis architecto eveniet neque necessitatibus, quia dolorem quidem harum nobis hic ipsam est dignissimos excepturi praesentium sapiente officia aspernatur tempore. Aut asperiores quos sint sed nulla modi, id rem totam esse labore, consequatur cum minus et non expedita quod ullam dolorum est excepturi eum ratione iusto. Repellat impedit cumque modi autem quibusdam nulla quae? Praesentium nobis saepe omnis, quibusdam repellat voluptatum impedit soluta ab, dolorum expedita porro? Alias, fugit, reprehenderit culpa veritatis vitae voluptate earum ipsam, quae voluptates possimus nobis recusandae rem fugiat? Quibusdam veritatis eligendi consequatur, eum inventore modi excepturi natus dolorem impedit enim deleniti dolor reiciendis assumenda praesentium temporibus quidem repellendus earum in. Aliquam nobis laudantium quaerat cupiditate aspernatur magni quisquam nihil, ea tempore. Est doloribus recusandae magnam quaerat error illo eum, culpa iste commodi inventore quas asperiores earum, architecto aut nihil! Nesciunt facere omnis et rem, officiis quidem similique necessitatibus tempora!</p>
+                    </div>
+                    <a href="#" class="btn btn--work">Перейти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="container">
+        <div class="about" id="about">
+            <img src="assets/img/about/about.png" alt="" class="about__photo">
+            <div class="about__content">
+                <div class="title">Кто я такой?</div>
+                <div class="subtitle">Начинающий веб-разработчик</div>
+                <div class="about__text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia atque ipsa cum minus! Voluptatibus aperiam non dolorum illo dignissimos enim aliquam, quas, aspernatur maiores ad iusto vitae quisquam et sint!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia atque ipsa cum minus! Voluptatibus aperiam non dolorum illo dignissimos enim aliquam, quas, aspernatur maiores ad iusto vitae quisquam et sint!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia atque ipsa cum minus! Voluptatibus aperiam non dolorum illo dignissimos enim aliquam, quas, aspernatur maiores ad iusto vitae quisquam et sint!</p>
+                </div>
+                <button class="btn btn--about" id="aboutBtn">Напиши мне</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog -->
+
+    <div class="container" id="blog">
+        <div class="title">Почитать</div>
+        <div class="subtitle">О разработке и не только</div>
+
+        <div class="blog__content">
+            
+        <?php $articles = mysqli_query($connection, "SELECT * FROM `articles` ORDER BY `id` DESC LIMIT 3"); ?>
+
+        <?php 
+            for ($i = 0; $i < 3; $i++) {
+                $art = mysqli_fetch_assoc($articles);
+        ?>
+            <div class="blog__item">
+                <img src="assets/img/blog/<?php echo $art['img']; ?>" alt="" class="blog__photo">
+                <div class="blog__date"><?php echo $art['pubdate']; ?></div>
+                <div class="blog__title"><?php echo $art['title']; ?></div>
+                <div class="blog__text">
+                    <p><?php echo mb_substr($art['text'], 0,  100, 'utf-8'); ?>...</p>
+                </div>
+                <button class="btn">Подробнее..</button>
+            </div>
+        <?php
+        
+            }
+        ?>
+
+        </div>
+
+        <a href="#" class="blog__news">Ко всем записям..</a>
+    </div>
+
+    <!-- Feedback -->
+    <div class="container">
+        <div class="feedback__inner" id="feedback">
+            <div class="feedback__content">
+                <div class="title">Остались вопросы?</div>
+                <div class="subtitle">Всегда рад помочь!</div>
+                <div class="contacts contacts--feedback">
+                    <div class="contacts__item">
+                        <img src="assets/img/contacts-img/call.svg" height="25px" alt="">
+                        <a href="tel:+79184924461">+7 (918) 492-44-61</a>
+                    </div>
+                    <div class="contacts__item">
+                        <img src="assets/img/contacts-img/email.svg" height="25px" alt="">
+                        <a href="mailto:artem.prudnikov57@gmail.com">artem.prudnikov57@gmail.com</a>
+                    </div>
+                </div>
+                <form class="form" id="form">
+                    <label for="name">Ваше имя</label>
+                    <input name="name" id="name" class="input" type="text" placeholder="Введите имя.." required>
+                    <label for="email">Ваш Е-Мэйл</label>
+                    <input name="email" id="email" class="input" type="email" placeholder="Введите Е-Мэйл.." required>
+                    <label for="text">Запрос</label>
+                    <textarea name="text" class="input input--textarea" id="text" placeholder="Введите ваш запрос.." required></textarea>
+                    
+                    <input type="submit" class="btn btn--form">
+                 </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <div class="footer__license">Made with &#10084; by Artem Prudnikov in 2020 </div>
+                    <div class="social social--footer">
+                        <a href="https://ru-ru.facebook.com/" target="blank" class="social__item">
+                            <img class="social__icon" src="assets/img/social-footer/facebook.svg" height="30px" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/accounts/login/?hl=ru" target="blank" class="social__item">
+                            <img class="social__icon" src="assets/img/social-footer/instagram.svg" height="30px" alt="">
+                        </a>
+                        <a href="https://www.skype.com/ru/" target="blank" class="social__item">
+                            <img class="social__icon" src="assets/img/social-footer/skype.svg" height="30px" alt="">
+                        </a>
+                        <a href="https://www.whatsapp.com/" target="blank" class="social__item">
+                            <img class="social__icon" src="assets/img/social-footer/whatsapp.svg" height="30px" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__nav">
+                    <a href="#instruments" class="footer__link">Инструменты</a>
+                    <a href="#works" class="footer__link">Работы</a>
+                    <a href="#about" class="footer__link">Обо мне</a>
+                    <a href="#blog" class="footer__link">Блог</a>
+                    <a href="#feedback" class="footer__link">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- feedBackModal -->
+
+    <div class="modal" id="feedbackModal">
+        <div class="modal-window">
+                <div class="modal-feedback__content">
+                    <div class="title">Поговорим?</div>
+                    <div class="subtitle">Позвони мне или оставь запрос</div>
+                    <form class="form">
+                        <label for="name"> Ваше имя</label>
+                        <input class="input" id="name" name="name" type="text" placeholder="Введите имя..">
+                        <label for="email">Ваш Е-Мэйл</label>
+                        <input class="input" id="email" name="email" type="email" placeholder="Введите Е-Мэйл..">
+                        <label for="text">Запрос</label>
+                        <textarea class="input input--textarea" id="text" name="text" placeholder="Введите ваш запрос.."></textarea>
+                        <input type="submit" class="btn btn--form btn--modal-feedback">
+                     </form>
+                </div>
+                <img src="assets/img/modal-feedback/modal-feedback.png" alt="" class="modal-feedback__photo">
+        </div>
+    </div>
+
+
+    <div class="works__container">
+        
+    </div>
+
+
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/slider.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/fixed.js"></script>
+    <script src="assets/js/hiddenNav.js"></script>
+    
+</body>
+</html>
