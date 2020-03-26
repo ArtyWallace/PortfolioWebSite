@@ -673,6 +673,7 @@ body {
 .works {
     width: 100%;
     padding-top: 30px;
+    margin-bottom: 70px;
 }
 
 .works__content {
@@ -693,6 +694,13 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+
+.works__item:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .work__img {
